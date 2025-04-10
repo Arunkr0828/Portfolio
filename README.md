@@ -12,5 +12,6 @@ Built with modern web technologies, this portfolio highlights:
 
 Whether you're a potential employer, collaborator, or just curious, feel free to explore and connect!
 
+👉 Live Site: https://arunkr0828.github.io/Portfolio/
 👉 Tech Stack: HTML | CSS | JavaScript
 
