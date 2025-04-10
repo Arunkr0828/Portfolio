@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARUN - DEVELOPER PROTFOLIO</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,400;1,700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #000000;
+            color: white;
+
+            .poppins-regular-italic {
+                font-family: "Poppins", sans-serif;
+                font-weight: 400;
+                font-style: italic;
+            }
+
+            .poppins-bold-italic {
+                font-family: "Poppins", sans-serif;
+                font-weight: 700;
+                font-style: italic;
+            }
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 70px;
+            background-color: rgb(0, 60, 255);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a:hover {
+            color: rgb(0, 60, 255);
+            font-size: 1.02rem;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        main hr {
+            border: 0;
+            background: rgb(174, 255, 0);
+            height: 1.5px;
+            margin: 40px 50px;
+        }
+
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            margin: 120px 0;
+            align-items: center;
+        }
+
+        .firstSection>div {
+            width: 35%;
+        }
+
+        .leftSection {
+            font-size: 2.3rem;
+        }
+
+        .leftSection .buttons {
+            padding: 20px 0;
+        }
+
+        .leftSection .btn {
+            padding: 12px;
+            background: #5c74cb;
+            color: #000000;
+            border: 2px solid black;
+            border-radius: 10px;
+            font-size: 15px;
+            cursor: pointer;
+        }
+
+        .rightSection img {
+            width: 55%;
+        }
+
+        .purple {
+            color: rgb(0, 247, 255);
+        }
+
+        .text-gray {
+            color: rgb(0, 255, 251);
+        }
+
+        #element {
+            color: rgb(0, 247, 255);
+        }
+
+        .secondSection {
+            max-width: 80vw;
+            margin: auto;
+            height: 60vh;
+        }
+
+        .secondSection h1 {
+            font-size: 2rem;
+        }
+
+        .secondSection .box {
+            background: white;
+            width: 85vw;
+            height: 2px;
+            margin: 30px -40px;
+            display: flex;
+        }
+
+        .secondSection .vertical {
+            height: 100px;
+            width: 1px;
+            background-color: white;
+            margin: 0 8.5vw;
+        }
+
+        .image-top {
+            width: 18px;
+            position: relative;
+            top: -32px;
+            left: -9.5px;
+        }
+
+        .vertical-title {
+            position: relative;
+            top: 80px;
+            width: 150px;
+        }
+
+        .vertical-desc {
+            position: relative;
+            top: 85px;
+            color: blueviolet;
+            width: 150px;
+            font-size: 10px;
+        }
+
+        footer {
+            background-color: #671e1e;
+        }
+
+        .footer {
+            display: flex;
+            padding: 20px 122px;
+            justify-content: space-evenly;
+        }
+
+        .footer ul {
+            list-style: none;
+        }
+
+        .footer>div {
+            width: 220;
+        }
+
+        footer .footer-rights {
+            text-align: center;
+            color: greenyellow;
+            padding: 12px 0;
+        }
+
+        @media screen and (max-width: 1200px) {
+
+            .box {
+                flex-direction: column;
+            }
+
+            .secondSection .vertical {
+                height: unset;
+            }
+
+            .vertical-title,
+            .vertical-desc {
+                left: 15px;
+                top: auto;
+            }
+
+            .secondSection .box {
+                width: 40vw;
+            }
+
+            nav {
+                flex-direction: column;
+            }
+
+            .firstSection {
+                flex-direction: column-reverse;
+            }
+
+            .leftSection {
+                width: 100% !important;
+                ;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .secondSection {
+                height: 70vh;
+            }
+
+                .rightSection {
+                    width: 525px !important;
+                    display: flex;
+                    justify-content: center;
+                }
+
+                .rightSection img {
+                    width: 50vw;
+                    margin-bottom: 70px;
+                }
+
+                .image-top {
+                    top: 29px;
+                }
+
+                .footer{
+                    justify-content: space-evenly;
+                    font-size: 10px;
+                }
+
+                .secondSection {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
+
+                body {
+                    min-width: fit-content;
+                }
+            }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">ARUN's PROTFOLIO</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Services</a></li>
+                    <li><a href="/">Projects</a></li>
+                    <li><a href="/">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                <div>Hi, My name is <span class="purple"> Arun</span></div>
+                <div>And I am a student</div>
+                <span id="element"></span>
+                <div class="buttons">
+                    <button class="btn">Download Resume</button>
+                    <button class="btn">Visit Github</button>
+                </div>
+
+            </div>
+            <div class="rightSection">
+                <img src="Arun-png.png" alt="">
+            </div>
+        </section>
+        <hr>
+        <section class="secondSection">
+            <span class="text-gray"> What Ihave done so far</span>
+            <h1>Work Experience</h1>
+
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-top" src="Arun-png.png" alt="">
+                    <div class="vertical-title">
+                        HTML Developer (2010-2012)
+                    </div>
+                    <div class="vertical-desc">
+                        Loren23
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="HTML.png" alt="">
+                    <div class="vertical-title">
+                        Node.js Developer (2012-2014)
+                    </div>
+                    <div class="vertical-desc">
+                        Loren23
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="INSTA.png" alt="">
+                    <div class="vertical-title">
+                        HTML Developer (2010-2012)
+                    </div>
+                    <div class="vertical-desc">
+                        Loren23
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="X.png" alt="">
+                    <div class="vertical-title">
+                        HTML Developer (2010-2012)
+                    </div>
+                    <div class="vertical-desc">
+                        Loren23
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="FB.png" alt="">
+                    <div class="vertical-title">
+                        HTML Developer (2010-2012)
+                    </div>
+                    <div class="vertical-desc">
+                        Loren23
+                    </div>
+                </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div class="footer-frist">
+                <h3>Arun's Portfolio</h3>
+            </div>
+            <div class="footer-second">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Contact</li>
+                    <li>Services</li>
+                </ul>
+            </div>
+            <div class="footer-third">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Contact</li>
+                    <li>Services</li>
+                </ul>
+            </div>
+            <div class="footer-fourth">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Contact</li>
+                    <li>Services</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-rights">
+            Copyright &#169; www.arunsportfolio.com | All rights reserved
+        </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['of Arka jain university', 'In CS and IT background', 'and Part time Photograper'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>
